@@ -164,6 +164,7 @@ function crudlStore(reducer) {
             routerMiddleware(history),
             exposeStateInfo,
         ),
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     ]
 
     return compose(...composition)(createReduxStore)(reducer)
