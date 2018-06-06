@@ -54,6 +54,7 @@
     "axios": "^0.15.2",
     "babel-polyfill": "^6.16.0",
     "bluebird": "^3.4.6",
+    "bubl": "./bubl-0.1.1.tgz",
     "classnames": "^2.2.5",
     "core-decorators": "^0.15.0",
     "history": "^4.5.0",
