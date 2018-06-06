@@ -52,8 +52,6 @@ import Request from './Request'
 import baseField from './fields/base/baseField'
 import simpleViewSchema from './admin-schema/simpleView'
 
-import DevTools from './containers/DevTools'
-
 function createContext(data = {}) {
     function context(name) {
         if (name) {
@@ -167,10 +165,6 @@ function crudlStore(reducer) {
             exposeStateInfo,
         ),
     ]
-
-    if (options.debug) {
-        composition.push(DevTools.instrument())
-    }
 
     return compose(...composition)(createReduxStore)(reducer)
 }
@@ -449,12 +443,7 @@ export function render(adminToBeValidated) {
 
     ReactDOM.render(
         <IntlProvider locale={admin.options.locale} messages={admin.messages}>
-            <Provider store={store}>
-                <div>
-                    {crudlRouter()}
-                    {options.debug && <DevTools />}
-                </div>
-            </Provider>
+            <Provider store={store}>{crudlRouter()}</Provider>
         </IntlProvider>,
         document.getElementById(options.rootElementId),
     )

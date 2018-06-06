@@ -74,7 +74,6 @@ const admin = {
         menu,           // The custom navigation
     },
     options: {
-        debug,          // Include DevTools (default false)
         basePath,       // The basePath of the front end (default  '/crudl/')
         baseURL,        // The baseURL of the API backend (default  '/api/')
         rootElementId,  // Where to place the root react element (default 'crudl-root')
@@ -107,7 +106,6 @@ title: () => <span>Welcome to <strong>CRUDL</strong>. Today is {getDayName()}</s
 In `admin.options` you may specify some general CRUDL settings
 ```js
 {
-    debug: false,                   // Include DevTools?
     basePath: '/crudl/',            // The basePath of the front end
     baseURL: '/api/',               // The baseURL of the API (backend)
     rootElementId: 'crudl-root',    // Where to place the root react element
