@@ -164,6 +164,7 @@ function crudlStore(reducer) {
             routerMiddleware(history),
             exposeStateInfo,
         ),
+        // eslint-disable-next-line
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     ]
 
