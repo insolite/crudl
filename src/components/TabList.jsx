@@ -1,13 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { getDOMNode } from '../utils/frontend'
 
 
 class TabList extends React.Component {
 
     static propTypes = {
-        titles: React.PropTypes.array.isRequired,
-        selected: React.PropTypes.number.isRequired,
-        onSelectTab: React.PropTypes.func.isRequired,
+        titles: PropTypes.array.isRequired,
+        selected: PropTypes.number.isRequired,
+        onSelectTab: PropTypes.func.isRequired,
     };
 
     componentDidMount() {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { clearMessage } from '../actions/messages'
 import { log } from '../Crudl'
@@ -6,10 +7,10 @@ import { log } from '../Crudl'
 export class Messages extends React.Component {
 
     static propTypes = {
-        message: React.PropTypes.string.isRequired,
-        messageType: React.PropTypes.string.isRequired,
-        messageTimeoutMS: React.PropTypes.number.isRequired,
-        hold: React.PropTypes.bool.isRequired,
+        message: PropTypes.string.isRequired,
+        messageType: PropTypes.string.isRequired,
+        messageTimeoutMS: PropTypes.number.isRequired,
+        hold: PropTypes.bool.isRequired,
     };
 
     componentWillReceiveProps(props) {

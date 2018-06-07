@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const TabPanel = ({ children, index, hidden }) => (
     <div id={`panel${index}`} role="tabpanel" aria-labelledby={`tab${index}`} aria-hidden={hidden}>
@@ -7,9 +8,9 @@ const TabPanel = ({ children, index, hidden }) => (
 )
 
 TabPanel.propTypes = {
-    index: React.PropTypes.number.isRequired,
-    hidden: React.PropTypes.bool.isRequired,
-    children: React.PropTypes.node,
+    index: PropTypes.number.isRequired,
+    hidden: PropTypes.bool.isRequired,
+    children: PropTypes.node,
 }
 
 export default TabPanel

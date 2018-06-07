@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { FormattedMessage } from 'react-intl'
 import messages from '../messages/pageNotFound'
@@ -6,7 +7,7 @@ import messages from '../messages/pageNotFound'
 class PageNotFound extends React.Component {
 
     static propTypes = {
-        message: React.PropTypes.string.isRequired,
+        message: PropTypes.string.isRequired,
     };
 
     render() {

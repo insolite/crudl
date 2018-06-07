@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 import FieldLoader from './FieldLoader'
 import { filtersShape } from '../PropTypes'
@@ -43,10 +44,10 @@ const FiltersForm = ({ handleSubmit, onClear, desc, onRegisterFilterField, submi
 
 FiltersForm.propTypes = {
     desc: filtersShape,
-    onClear: React.PropTypes.func.isRequired,
-    onRegisterFilterField: React.PropTypes.func.isRequired,
-    handleSubmit: React.PropTypes.func.isRequired,
-    submitting: React.PropTypes.bool,
+    onClear: PropTypes.func.isRequired,
+    onRegisterFilterField: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    submitting: PropTypes.bool,
 }
 
 export default FiltersForm

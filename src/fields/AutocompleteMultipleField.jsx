@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import isEqual from 'lodash/isEqual'
 
@@ -20,7 +21,7 @@ function cleanValue(value) {
 class AutocompleteMultipleField extends React.Component {
 
     static propTypes = {
-        watch: React.PropTypes.func.isRequired,
+        watch: PropTypes.func.isRequired,
     }
 
     static defaultProps = {

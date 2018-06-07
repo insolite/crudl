@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 
 import { connect } from 'react-redux'
@@ -19,11 +20,11 @@ class FieldSet extends React.Component {
 
     static propTypes = {
         desc: fieldsetShape,
-        formName: React.PropTypes.string.isRequired,
-        fields: React.PropTypes.object,
-        watch: React.PropTypes.func.isRequired,
-        onAdd: React.PropTypes.func,
-        onEdit: React.PropTypes.func,
+        formName: PropTypes.string.isRequired,
+        fields: PropTypes.object,
+        watch: PropTypes.func.isRequired,
+        onAdd: PropTypes.func,
+        onEdit: PropTypes.func,
     };
 
     state = {};

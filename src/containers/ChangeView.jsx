@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { reduxForm, SubmissionError, change } from 'redux-form'
 import { withRouter } from 'react-router'
@@ -50,12 +51,12 @@ export class ChangeView extends React.Component {
     static propTypes = {
         desc: changeViewShape,
         intl: intlShape.isRequired,
-        watch: React.PropTypes.func.isRequired,
+        watch: PropTypes.func.isRequired,
         router: routerShape.isRequired,
         location: locationShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
-        route: React.PropTypes.object.isRequired,
-        forms: React.PropTypes.object.isRequired,
+        dispatch: PropTypes.func.isRequired,
+        route: PropTypes.object.isRequired,
+        forms: PropTypes.object.isRequired,
         breadcrumbs: breadcrumbsShape.isRequired,
     }
 

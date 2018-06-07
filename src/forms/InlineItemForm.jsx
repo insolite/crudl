@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { propTypes as RFPropTypes, getFormValues } from 'redux-form'
 
@@ -11,10 +12,10 @@ class InlineItemForm extends React.Component {
 
     static propTypes = {
         desc: tabShape,
-        onSaveItem: React.PropTypes.func.isRequired,
-        onAddItem: React.PropTypes.func.isRequired,
-        onDeleteItem: React.PropTypes.func.isRequired,
-        index: React.PropTypes.number.isRequired,
+        onSaveItem: PropTypes.func.isRequired,
+        onAddItem: PropTypes.func.isRequired,
+        onDeleteItem: PropTypes.func.isRequired,
+        index: PropTypes.number.isRequired,
         ...RFPropTypes,
     };
 

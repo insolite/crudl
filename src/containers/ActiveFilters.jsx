@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { activeFiltersShape } from '../PropTypes'
 
@@ -6,7 +7,7 @@ export class ActiveFilters extends React.Component {
 
     static propTypes = {
         activeFilters: activeFiltersShape.isRequired,
-        onRemove: React.PropTypes.func.isRequired,
+        onRemove: PropTypes.func.isRequired,
     };
 
     render() {

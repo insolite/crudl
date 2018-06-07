@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import * as frontendUtils from '../../utils/frontend'
 
@@ -9,13 +10,13 @@ have no idea what props are needed here (but there's a lot). Lots of eslinting e
 export class FieldButtonGroup extends React.Component {
 
     static propTypes = {
-        id: React.PropTypes.string.isRequired,
-        meta: React.PropTypes.shape({
-            touched: React.PropTypes.boolean,
-            error: React.PropTypes.node,
+        id: PropTypes.string.isRequired,
+        meta: PropTypes.shape({
+            touched: PropTypes.boolean,
+            error: PropTypes.node,
         }).isRequired,
-        layout: React.PropTypes.string,
-        children: React.PropTypes.node,
+        layout: PropTypes.string,
+        children: PropTypes.node,
     }
 
     constructor() {

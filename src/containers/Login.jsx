@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { reduxForm } from 'redux-form'
 import { withRouter } from 'react-router'
 import { routerShape, locationShape } from 'react-router/lib/PropTypes'
@@ -20,7 +21,7 @@ class Login extends React.Component {
 
     static propTypes = {
         desc: loginShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
         router: routerShape.isRequired,
         location: locationShape.isRequired,
         intl: intlShape.isRequired,

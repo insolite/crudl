@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { reduxForm, SubmissionError } from 'redux-form'
 import { injectIntl, intlShape } from 'react-intl'
@@ -20,11 +21,11 @@ import handleErrors from '../utils/handleErrors'
 class AddRelation extends React.Component {
 
     static propTypes = {
-        desc: React.PropTypes.object.isRequired, // FIXME define the shape
+        desc: PropTypes.object.isRequired, // FIXME define the shape
         intl: intlShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
-        onSave: React.PropTypes.func.isRequired,
-        onCancel: React.PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
+        onSave: PropTypes.func.isRequired,
+        onCancel: PropTypes.func.isRequired,
     }
 
     componentWillMount() {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import baseField from './base/baseField'
 import { hasParentId, visuallyFocusElem, visuallyBlurElem, toggleExpanded, closeExpanded } from '../utils/frontend'
 import asArray from '../utils/asArray'

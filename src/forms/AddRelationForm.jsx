@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import FieldSet from './FieldSet'
 import { createFieldSetId } from '../utils/frontend'
@@ -46,16 +47,16 @@ const AddRelationForm = ({ anyTouched, desc, form, error, handleSubmit, onSave, 
 )
 
 AddRelationForm.propTypes = {
-    desc: React.PropTypes.object.isRequired,
-    onSave: React.PropTypes.func.isRequired,
-    onCancel: React.PropTypes.func.isRequired,
-    form: React.PropTypes.string.isRequired,
-    anyTouched: React.PropTypes.bool.isRequired,
-    handleSubmit: React.PropTypes.func.isRequired,
-    error: React.PropTypes.node,
-    labels: React.PropTypes.shape({
-        save: React.PropTypes.string.isRequired,
-        cancel: React.PropTypes.string.isRequired,
+    desc: PropTypes.object.isRequired,
+    onSave: PropTypes.func.isRequired,
+    onCancel: PropTypes.func.isRequired,
+    form: PropTypes.string.isRequired,
+    anyTouched: PropTypes.bool.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    error: PropTypes.node,
+    labels: PropTypes.shape({
+        save: PropTypes.string.isRequired,
+        cancel: PropTypes.string.isRequired,
     }).isRequired,
 }
 

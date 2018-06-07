@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import get from 'lodash/get'
 import isEqual from 'lodash/isEqual'
 import { connect } from 'react-redux'
@@ -77,9 +78,9 @@ export class ListView extends React.Component {
 
     static propTypes = {
         desc: listViewShape.isRequired,
-        watch: React.PropTypes.func.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
-        filtersVisible: React.PropTypes.bool.isRequired,
+        watch: PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
+        filtersVisible: PropTypes.bool.isRequired,
         location: locationShape.isRequired,
         router: routerShape.isRequired,
         intl: intlShape.isRequired,

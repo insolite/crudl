@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { loginShape } from '../PropTypes'
 
 import FieldSet from './FieldSet'
@@ -40,12 +41,12 @@ const LoginForm = ({ desc, form, handleSubmit, error, anyTouched, submitting, lo
 
 LoginForm.propTypes = {
     desc: loginShape.isRequired,
-    handleSubmit: React.PropTypes.func.isRequired,
-    anyTouched: React.PropTypes.bool,
-    error: React.PropTypes.node,
-    submitting: React.PropTypes.bool,
-    loginButtonLabel: React.PropTypes.string.isRequired,
-    form: React.PropTypes.string.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    anyTouched: PropTypes.bool,
+    error: PropTypes.node,
+    submitting: PropTypes.bool,
+    loginButtonLabel: PropTypes.string.isRequired,
+    form: PropTypes.string.isRequired,
 }
 
 export default LoginForm

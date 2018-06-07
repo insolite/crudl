@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 
@@ -15,10 +16,10 @@ class App extends React.Component {
 
     static propTypes = {
         admin: adminShape,
-        loggedIn: React.PropTypes.bool.isRequired,
-        navigationVisible: React.PropTypes.bool.isRequired,
-        filtersVisible: React.PropTypes.bool.isRequired,
-        bottomBarVisible: React.PropTypes.bool.isRequired,
+        loggedIn: PropTypes.bool.isRequired,
+        navigationVisible: PropTypes.bool.isRequired,
+        filtersVisible: PropTypes.bool.isRequired,
+        bottomBarVisible: PropTypes.bool.isRequired,
     };
 
     constructor() {

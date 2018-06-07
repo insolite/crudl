@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import FieldButtonGroup from './base/FieldButtonGroup'
 import baseField from './base/baseField'
 import { baseFieldPropTypes } from '../PropTypes'
@@ -8,8 +9,8 @@ class UrlField extends React.Component {
 
     static propTypes = {
         ...baseFieldPropTypes,
-        link: React.PropTypes.bool.isRequired,
-        linkURL: React.PropTypes.string,
+        link: PropTypes.bool.isRequired,
+        linkURL: PropTypes.string,
     };
 
     render() {

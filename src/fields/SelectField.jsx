@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import baseField from './base/baseField'
 import withPropsWatch from '../utils/withPropsWatch'
 import {
@@ -12,7 +13,7 @@ import {
 class SelectField extends React.Component {
 
     static propTypes = {
-        watch: React.PropTypes.func.isRequired,
+        watch: PropTypes.func.isRequired,
     }
 
     static defaultProps = {

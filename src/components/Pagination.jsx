@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import ContinuousPagination from '../components/ContinuousPagination'
 import NumberedPagination from '../components/NumberedPagination'
@@ -8,17 +9,17 @@ export class Pagination extends React.Component {
 
     static propTypes = {
         // pagingation info obtained from action responses
-        pagination: React.PropTypes.object,
+        pagination: PropTypes.object,
         // Callback
-        onRequestPage: React.PropTypes.func.isRequired,
+        onRequestPage: PropTypes.func.isRequired,
         // the currently displayed results
-        results: React.PropTypes.array.isRequired,
+        results: PropTypes.array.isRequired,
         // Whether the results were filtered or not
-        filtered: React.PropTypes.bool.isRequired,
+        filtered: PropTypes.bool.isRequired,
         // True if the new results are currently being loaded
-        loading: React.PropTypes.bool.isRequired,
+        loading: PropTypes.bool.isRequired,
         // Optional custom pagination Component
-        paginationComponent: React.PropTypes.any,
+        paginationComponent: PropTypes.any,
     };
 
     render() {

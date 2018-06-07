@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import FieldSet from './FieldSet'
 import { createFieldSetId } from '../utils/frontend'
@@ -62,20 +63,20 @@ const AddViewForm = props => (
 
 AddViewForm.propTypes = {
     desc: addViewShape,
-    onSave: React.PropTypes.func.isRequired,
-    onSaveAndContinue: React.PropTypes.func.isRequired,
-    onSaveAndAddAnother: React.PropTypes.func.isRequired,
-    form: React.PropTypes.string.isRequired,
-    anyTouched: React.PropTypes.bool.isRequired,
-    handleSubmit: React.PropTypes.func.isRequired,
-    error: React.PropTypes.node,
-    labels: React.PropTypes.shape({
-        save: React.PropTypes.string.isRequired,
-        saveAndContinue: React.PropTypes.string.isRequired,
-        saveAndAddAnother: React.PropTypes.string.isRequired,
+    onSave: PropTypes.func.isRequired,
+    onSaveAndContinue: PropTypes.func.isRequired,
+    onSaveAndAddAnother: PropTypes.func.isRequired,
+    form: PropTypes.string.isRequired,
+    anyTouched: PropTypes.bool.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    error: PropTypes.node,
+    labels: PropTypes.shape({
+        save: PropTypes.string.isRequired,
+        saveAndContinue: PropTypes.string.isRequired,
+        saveAndAddAnother: PropTypes.string.isRequired,
     }).isRequired,
-    onAdd: React.PropTypes.func.isRequired,
-    onEdit: React.PropTypes.func.isRequired,
+    onAdd: PropTypes.func.isRequired,
+    onEdit: PropTypes.func.isRequired,
 }
 
 export default AddViewForm

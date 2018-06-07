@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { IndexLink, withRouter } from 'react-router'
 import { connect } from 'react-redux'
 import { FormattedMessage } from 'react-intl'
@@ -17,12 +18,12 @@ import MenuItem from '../components/MenuItem'
 export class Navigation extends React.Component {
 
     static propTypes = {
-        onLogout: React.PropTypes.func,
+        onLogout: PropTypes.func,
         views: viewsShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
-        activeView: React.PropTypes.string,
-        navigationVisible: React.PropTypes.bool.isRequired,
-        menuComponent: React.PropTypes.func, // A react component
+        dispatch: PropTypes.func.isRequired,
+        activeView: PropTypes.string,
+        navigationVisible: PropTypes.bool.isRequired,
+        menuComponent: PropTypes.func, // A react component
         router: routerShape.isRequired,
         auth: authShape.isRequired,
     };

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const MenuContainer = props => (
     <ul>
@@ -7,7 +8,7 @@ const MenuContainer = props => (
 )
 
 MenuContainer.propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
 }
 
 export default MenuContainer

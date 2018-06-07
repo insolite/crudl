@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 import FieldLoader from './FieldLoader'
 
@@ -32,9 +33,9 @@ const SimpleForm = ({ desc, submitting, handleSubmit }) => (
 )
 
 SimpleForm.propTypes = {
-    desc: React.PropTypes.object.isRequired,
-    handleSubmit: React.PropTypes.func.isRequired,
-    submitting: React.PropTypes.bool,
+    desc: PropTypes.object.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    submitting: PropTypes.bool,
 }
 
 export default SimpleForm

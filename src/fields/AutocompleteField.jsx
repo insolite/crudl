@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import isEqual from 'lodash/isEqual'
 import isArray from 'lodash/isArray'
 import classNames from 'classnames'
@@ -27,9 +28,9 @@ class AutocompleteField extends React.Component {
 
     static propTypes = {
         ...baseFieldPropTypes,
-        actions: React.PropTypes.shape({
-            select: React.PropTypes.func.isRequired,
-            search: React.PropTypes.func.isRequired,
+        actions: PropTypes.shape({
+            select: PropTypes.func.isRequired,
+            search: PropTypes.func.isRequired,
         }),
     }
 

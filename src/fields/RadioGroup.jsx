@@ -1,13 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import baseField from './base/baseField'
 
 class RadioGroup extends React.Component {
 
     static propTypes = {
-        label: React.PropTypes.string.isRequired,
-        helpText: React.PropTypes.string.isRequired,
-        disabled: React.PropTypes.bool.isRequired,
-        readOnly: React.PropTypes.bool.isRequired,
+        label: PropTypes.string.isRequired,
+        helpText: PropTypes.string.isRequired,
+        disabled: PropTypes.bool.isRequired,
+        readOnly: PropTypes.bool.isRequired,
     };
 
     static defaultProps = {

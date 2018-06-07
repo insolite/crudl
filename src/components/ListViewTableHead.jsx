@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import { listViewFieldShape, sortingShape } from '../PropTypes'
@@ -84,12 +85,12 @@ const ListViewHeader = ({ sorting, onSortingChange, fields, selectEnabled, allSe
 )
 
 ListViewHeader.propTypes = {
-    fields: React.PropTypes.arrayOf(listViewFieldShape).isRequired,
+    fields: PropTypes.arrayOf(listViewFieldShape).isRequired,
     sorting: sortingShape,
-    selectEnabled: React.PropTypes.bool.isRequired,
-    onSortingChange: React.PropTypes.func.isRequired,
-    onSelectAllChange: React.PropTypes.func.isRequired,
-    allSelected: React.PropTypes.bool.isRequired,
+    selectEnabled: PropTypes.bool.isRequired,
+    onSortingChange: PropTypes.func.isRequired,
+    onSelectAllChange: PropTypes.func.isRequired,
+    allSelected: PropTypes.bool.isRequired,
 }
 
 export default ListViewHeader

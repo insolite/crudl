@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const MenuGroup = props => (
     <ul>
@@ -8,8 +9,8 @@ const MenuGroup = props => (
 )
 
 MenuGroup.propTypes = {
-    children: React.PropTypes.node,
-    label: React.PropTypes.node,
+    children: PropTypes.node,
+    label: PropTypes.node,
 }
 
 export default MenuGroup

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { autobind } from 'core-decorators'
 
 import { toggleExpanded, closeExpanded } from '../utils/frontend'
@@ -8,10 +9,10 @@ import { bulkActionsShape } from '../PropTypes'
 class BulkActions extends React.Component {
 
     static propTypes = {
-        id: React.PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired,
         actions: bulkActionsShape.isRequired,
-        nSelected: React.PropTypes.number.isRequired,
-        onApply: React.PropTypes.func.isRequired,
+        nSelected: PropTypes.number.isRequired,
+        onApply: PropTypes.func.isRequired,
     }
 
     state = { selected: undefined }

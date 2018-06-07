@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { reduxForm } from 'redux-form'
 import { autobind } from 'core-decorators'
@@ -20,11 +21,11 @@ export class Filters extends React.Component {
 
     static propTypes = {
         desc: filtersShape,
-        onSubmit: React.PropTypes.func.isRequired,
-        onClear: React.PropTypes.func.isRequired,
-        filters: React.PropTypes.object,
-        dispatch: React.PropTypes.func.isRequired,
-        watch: React.PropTypes.func.isRequired,
+        onSubmit: PropTypes.func.isRequired,
+        onClear: PropTypes.func.isRequired,
+        filters: PropTypes.object,
+        dispatch: PropTypes.func.isRequired,
+        watch: PropTypes.func.isRequired,
     };
 
     constructor() {

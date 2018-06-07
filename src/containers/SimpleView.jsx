@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { reduxForm } from 'redux-form'
 
 import SimpleForm from '../forms/SimpleForm'
@@ -10,7 +11,7 @@ import getValidator from '../utils/getValidator'
 class SimpleView extends React.Component {
 
     static propTypes = {
-        desc: React.PropTypes.object.isRequired,
+        desc: PropTypes.object.isRequired,
     }
 
     componentWillMount() {

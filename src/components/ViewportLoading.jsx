@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import LoadingIndicator from './LoadingIndicator'
 
 const ViewportLoading = props => (
@@ -13,8 +14,8 @@ const ViewportLoading = props => (
 )
 
 ViewportLoading.propTypes = {
-    title: React.PropTypes.string.isRequired,
-    loadingText: React.PropTypes.string,
+    title: PropTypes.string.isRequired,
+    loadingText: PropTypes.string,
 }
 
 export default ViewportLoading

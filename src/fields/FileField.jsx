@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { autobind } from 'core-decorators'
 
 import baseField from './base/baseField'
@@ -49,21 +50,21 @@ import { errorMessage } from '../actions/messages'
 class FileField extends React.Component {
 
     static propTypes = {
-        input: React.PropTypes.shape({
-            onChange: React.PropTypes.func.isRequired,
-            value: React.PropTypes.shape({
-                value: React.PropTypes.any,
-                label: React.PropTypes.node,
-                previewURL: React.PropTypes.string,
+        input: PropTypes.shape({
+            onChange: PropTypes.func.isRequired,
+            value: PropTypes.shape({
+                value: PropTypes.any,
+                label: PropTypes.node,
+                previewURL: PropTypes.string,
             }),
         }),
         id: baseFieldPropTypes.id,
         readOnly: baseFieldPropTypes.readOnly,
         disabled: baseFieldPropTypes.disabled,
-        onSelect: React.PropTypes.func.isRequired,
-        onClear: React.PropTypes.func,
-        readAs: React.PropTypes.oneOf(['DataURL', 'ArrayBuffer', 'Text']),
-        dispatch: React.PropTypes.func.isRequired,
+        onSelect: PropTypes.func.isRequired,
+        onClear: PropTypes.func,
+        readAs: PropTypes.oneOf(['DataURL', 'ArrayBuffer', 'Text']),
+        dispatch: PropTypes.func.isRequired,
     }
 
     static defaultProps = {

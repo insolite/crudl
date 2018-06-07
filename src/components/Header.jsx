@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Breadcrumbs from '../components/Breadcrumbs'
 
 const Header = props => (
@@ -9,7 +10,7 @@ const Header = props => (
 )
 
 Header.propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
 }
 
 export default Header

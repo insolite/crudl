@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import baseField from './base/baseField'
 import { baseFieldPropTypes } from '../PropTypes'
 
@@ -6,7 +7,7 @@ export class TextField extends React.Component {
 
     static propTypes = {
         id: baseFieldPropTypes.id,
-        placeholder: React.PropTypes.string,
+        placeholder: PropTypes.string,
         input: baseFieldPropTypes.input,
         disabled: baseFieldPropTypes.disabled,
         readOnly: baseFieldPropTypes.readOnly,

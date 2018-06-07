@@ -1,13 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 /* FIXME (Vaclav): Shouldn't this be a component instead? */
 
 class Search extends React.Component {
 
     static propTypes = {
-        name: React.PropTypes.string.isRequired,
-        onSearch: React.PropTypes.func.isRequired,
-        onClear: React.PropTypes.func.isRequired,
+        name: PropTypes.string.isRequired,
+        onSearch: PropTypes.func.isRequired,
+        onClear: PropTypes.func.isRequired,
     };
 
     static defaultProps = {

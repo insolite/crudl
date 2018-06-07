@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import FieldButtonGroup from './base/FieldButtonGroup'
 import * as frontendUtils from '../utils/frontend'
 import baseField from './base/baseField'

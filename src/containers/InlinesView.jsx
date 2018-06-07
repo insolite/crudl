@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { reduxForm } from 'redux-form'
 import { injectIntl, intlShape } from 'react-intl'
@@ -39,7 +40,7 @@ class InlinesView extends React.Component {
     static propTypes = {
         desc: tabShape.isRequired,
         intl: intlShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
     }
 
     state = {

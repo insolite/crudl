@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { autobind } from 'core-decorators'
 
@@ -6,13 +7,13 @@ import { autobind } from 'core-decorators'
 class ListViewItem extends React.Component {
 
     static propTypes = {
-        itemId: React.PropTypes.string.isRequired,
-        fields: React.PropTypes.array.isRequired,
-        data: React.PropTypes.object.isRequired,
-        onClick: React.PropTypes.func.isRequired,
-        selectEnabled: React.PropTypes.bool.isRequired,
-        onSelectChange: React.PropTypes.func.isRequired,
-        selected: React.PropTypes.bool.isRequired,
+        itemId: PropTypes.string.isRequired,
+        fields: PropTypes.array.isRequired,
+        data: PropTypes.object.isRequired,
+        onClick: PropTypes.func.isRequired,
+        selectEnabled: PropTypes.bool.isRequired,
+        onSelectChange: PropTypes.func.isRequired,
+        selected: PropTypes.bool.isRequired,
     };
 
     handleClick() {

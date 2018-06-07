@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unused-prop-types */
 import React from 'react'
+import PropTypes from 'prop-types'
 import { autofill } from 'redux-form'
 import { connect } from 'react-redux'
 import classNames from 'classnames'
@@ -33,12 +34,12 @@ class FieldLoader extends React.Component {
         onAdd: baseFieldPropTypes.onAdd,
         onEdit: baseFieldPropTypes.onEdit,
         registerFilterField: baseFieldPropTypes.registerFilterField,
-        dispatch: React.PropTypes.func.isRequired,
-        formName: React.PropTypes.string,
+        dispatch: PropTypes.func.isRequired,
+        formName: PropTypes.string,
         fields: formFieldsShape,
-        watch: React.PropTypes.func.isRequired,
-        unwatch: React.PropTypes.func.isRequired,
-        reload: React.PropTypes.bool,
+        watch: PropTypes.func.isRequired,
+        unwatch: PropTypes.func.isRequired,
+        reload: PropTypes.bool,
     };
 
     static defaultProps = {

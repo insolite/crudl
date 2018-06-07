@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { pluralize } from '../utils/frontend'
 
@@ -12,11 +13,11 @@ import { pluralize } from '../utils/frontend'
 export class ContinuousPagination extends React.Component {
 
     static propTypes = {
-        pagination: React.PropTypes.object, // pagingation info obtained from action responses
-        onRequestPage: React.PropTypes.func.isRequired, // Callback
-        results: React.PropTypes.array.isRequired, // the currently displayed results
-        filtered: React.PropTypes.bool.isRequired, // True if the new results were filtered
-        loading: React.PropTypes.bool.isRequired, // True if the new results are currently being loaded
+        pagination: PropTypes.object, // pagingation info obtained from action responses
+        onRequestPage: PropTypes.func.isRequired, // Callback
+        results: PropTypes.array.isRequired, // the currently displayed results
+        filtered: PropTypes.bool.isRequired, // True if the new results were filtered
+        loading: PropTypes.bool.isRequired, // True if the new results are currently being loaded
     };
 
     static defaultProps = {

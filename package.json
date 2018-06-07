@@ -62,6 +62,7 @@
     "joi-browser": "^9.1.0",
     "lodash": "^4.16.4",
     "node-uuid": "^1.4.7",
+    "prop-types": "^15.6.1",
     "react-addons-test-utils": "^15.3.2",
     "react-intl": "^2.1.5",
     "react-redux": "^4.4.5",

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import InlinesView from './InlinesView'
 
 import { tabShape } from '../PropTypes'

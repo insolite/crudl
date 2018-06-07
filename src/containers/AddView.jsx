@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { reduxForm, reset, SubmissionError, change } from 'redux-form'
 import { withRouter } from 'react-router'
@@ -57,11 +58,11 @@ class AddView extends React.Component {
     static propTypes = {
         desc: addViewShape.isRequired,
         intl: intlShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
         router: routerShape.isRequired,
         location: locationShape.isRequired,
-        route: React.PropTypes.object.isRequired,
-        forms: React.PropTypes.object.isRequired,
+        route: PropTypes.object.isRequired,
+        forms: PropTypes.object.isRequired,
         breadcrumbs: breadcrumbsShape.isRequired,
     }
 

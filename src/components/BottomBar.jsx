@@ -1,14 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { autobind } from 'core-decorators'
 
 @autobind
 class BottomBar extends React.Component {
 
     static propTypes = {
-        open: React.PropTypes.bool.isRequired,
-        children: React.PropTypes.node,
-        onClose: React.PropTypes.func.isRequired,
-        title: React.PropTypes.node,
+        open: PropTypes.bool.isRequired,
+        children: PropTypes.node,
+        onClose: PropTypes.func.isRequired,
+        title: PropTypes.node,
     }
 
     componentDidMount() {

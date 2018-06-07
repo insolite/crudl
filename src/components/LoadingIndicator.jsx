@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const LoadingIndicator = props => (
     <div className="loading-indicator">
@@ -8,7 +9,7 @@ const LoadingIndicator = props => (
 )
 
 LoadingIndicator.propTypes = {
-    text: React.PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
 }
 
 export default LoadingIndicator

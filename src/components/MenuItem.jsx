@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { routerShape } from 'react-router/lib/PropTypes'
@@ -10,12 +11,12 @@ import { hideNavigation } from '../actions/frontend'
 class MenuItem extends React.Component {
 
     static propTypes = {
-        listPath: React.PropTypes.string,
-        addPath: React.PropTypes.string,
-        label: React.PropTypes.node,
-        isActive: React.PropTypes.bool,
+        listPath: PropTypes.string,
+        addPath: PropTypes.string,
+        label: PropTypes.node,
+        isActive: PropTypes.bool,
         router: routerShape.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
     }
 
     handleItemClick() {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import { FormattedMessage } from 'react-intl'
@@ -13,8 +14,8 @@ class Logout extends React.Component {
 
     static propTypes = {
         loginPath: pathShape.isRequired,
-        loggedIn: React.PropTypes.bool.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
+        loggedIn: PropTypes.bool.isRequired,
+        dispatch: PropTypes.func.isRequired,
     };
 
     componentWillMount() {

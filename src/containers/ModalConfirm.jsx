@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { injectIntl, intlShape } from 'react-intl'
 import { autobind } from 'core-decorators'
@@ -10,14 +11,14 @@ import messages from '../messages/modal'
 class ModalConfirm extends React.Component {
 
     static propTypes = {
-        visible: React.PropTypes.bool.isRequired,
-        modalType: React.PropTypes.string.isRequired,
-        message: React.PropTypes.string.isRequired,
-        labelCancel: React.PropTypes.string,
-        labelConfirm: React.PropTypes.string,
-        onCancel: React.PropTypes.func.isRequired,
-        onConfirm: React.PropTypes.func.isRequired,
-        dispatch: React.PropTypes.func.isRequired,
+        visible: PropTypes.bool.isRequired,
+        modalType: PropTypes.string.isRequired,
+        message: PropTypes.string.isRequired,
+        labelCancel: PropTypes.string,
+        labelConfirm: PropTypes.string,
+        onCancel: PropTypes.func.isRequired,
+        onConfirm: PropTypes.func.isRequired,
+        dispatch: PropTypes.func.isRequired,
         intl: intlShape.isRequired,
     };
 
