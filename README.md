@@ -92,11 +92,11 @@ The provided admin will be validated (using [Joi](https://github.com/hapijs/joi)
 > ### Attributes and properties
 We distinguish between attributes and properties. An attribute is a value of a certain type (such as string, boolean, function, an object, etc.), whereas property can also be a function that returns such a value. In other words, with property you can also provide the getter method. For example, the title of the CRUDL instance is a string (or react element) property. So you can define it as
 ```js
-title: 'Welcome to CRUDL'`
+title: 'Welcome to CRUDL'
 ```
 or as
 ```js
-title: () => `Welcome to CRUDL. Today is ${getDayName()}
+title: () => `Welcome to CRUDL. Today is ${getDayName()}`
 ```
 or even as:
 ```js
