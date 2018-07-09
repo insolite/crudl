@@ -17,7 +17,7 @@ class TimeField extends React.Component {
     };
 
     setTimeNow() {
-        this.props.input.autofill(this.props.formatTime(new Date()))
+        this.props.input.onChange(this.props.formatTime(new Date()))
     }
 
     render() {

@@ -105,7 +105,7 @@ class InlinesView extends React.Component {
     handleAdd(index, data) {
         const { desc, dispatch, intl } = this.props
         if (hasPermission(desc.id, 'add')) {
-            return handleErrors(desc.actions.add(req(normalize(desc, data))))
+            return handleErrors(desc.actions.add(req(denormalize(desc, data))))
             .then((res) => {
                 const items = this.state.items.slice()
                 items[index].new = false
