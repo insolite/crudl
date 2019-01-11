@@ -383,8 +383,10 @@ export class ListView extends React.Component {
 
                 // Collect filters (filters and search queries)
                 let filters = this.getSearchQueries(props)
+                let denormalizedFilters = filters
                 if (props.desc.filters) {
-                    filters = { ...filters, ...props.desc.filters.denormalize(this.getFilters(props)) }
+                    filters = { ...filters, ...this.getFilters(props) }
+                    denormalizedFilters = props.desc.filters.denormalize(filters)
                 }
 
                 if (!page) {
@@ -396,7 +398,7 @@ export class ListView extends React.Component {
                 const request = req()
                     .getPage(page)
                     .sort(getSorting(props))
-                    .withFilters(filters)
+                    .withFilters(denormalizedFilters)
 
                 // Do the action
                 handleErrors(this.props.desc.actions.list(request))
